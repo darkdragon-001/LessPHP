@@ -14,13 +14,19 @@ It includes the following functionality (even a bit more):
 Installation
 ============
 Add the following line to your app/Config/bootstrap.php file:
-	CakePlugin::load('LessPHP', array('bootstrap' => true));
+
+```php
+CakePlugin::load('LessPHP', array('bootstrap' => true));
+```
+
 after all other Dispatcher Configurations (since this plugin will modify the Dispatcher).
 
 When using the default configuration it should be AFTER
-	Configure::write('Dispatcher.filters', array(
-		'AssetDispatcher',
-		'CacheDispatcher'
-	));
 
+```php
+Configure::write('Dispatcher.filters', array(
+    'AssetDispatcher',
+    'CacheDispatcher'
+));
+```
 
