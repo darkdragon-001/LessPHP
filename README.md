@@ -11,6 +11,8 @@ It includes the following functionality (even a bit more):
 * __Console__: `cake LessPHP lesscss build` to build all _.less_ files in _webroot/css/_
 * __Dispatcher__: Will serve directly compiled version (when no such file exists) of _webroot/css/filename.less_ when accessing _webroot/compiled_css/filename.css_
 
+**Note:** Live compiling using Dispatcher is ONLY available when debug > 0 is set in app/config/core.php.
+
 Installation
 ============
 Add the following line to your app/Config/bootstrap.php file:
